@@ -1,6 +1,18 @@
-export const metadata = { title: 'AgentEscrow', description: 'Smart contract guardrails for AI agents' };
-export default function RootLayout({ children }) {
+import './globals.css'
+
+export const metadata = {
+  title: 'AgentEscrow',
+  description: 'Smart contract guardrails for autonomous AI agents',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html><head/><body className="bg-slate-950">{children}</body></html>
-  );
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
 }

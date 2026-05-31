@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd agentescrow-web && npm install && npm run build",
+  "outputDirectory": "agentescrow-web/.next",
+  "framework": "nextjs"
+}

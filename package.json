@@ -1,0 +1,12 @@
+{
+  "name": "agentescrow",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "cd agentescrow-web && npm run dev",
+    "build": "cd agentescrow-web && npm run build",
+    "start": "cd agentescrow-web && npm start"
+  },
+  "workspaces": [
+    "agentescrow-web"
+  ]
+}

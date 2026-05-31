@@ -1,31 +1,33 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white p-8">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl font-bold mb-4">AgentEscrow</h1>
-        <p className="text-xl text-slate-400 mb-8">Smart contract guardrails for autonomous AI agents</p>
+    <main style={{ minHeight: '100vh', backgroundColor: '#0f172a', color: 'white', padding: '2rem' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem' }}>AgentEscrow</h1>
+        <p style={{ fontSize: '1.25rem', color: '#cbd5e1', marginBottom: '2rem' }}>
+          Smart contract guardrails for autonomous AI agents
+        </p>
         
-        <div className="grid md:grid-cols-3 gap-6 mt-12">
-          <div className="bg-slate-900 p-6 rounded-lg border border-slate-700">
-            <h2 className="text-2xl font-bold mb-2">Velocity Throttling</h2>
-            <p className="text-slate-300">Daily spending limits prevent runaway costs</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '3rem' }}>
+          <div style={{ backgroundColor: '#1e293b', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #475569' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Velocity Throttling</h2>
+            <p style={{ color: '#cbd5e1' }}>Daily spending limits prevent runaway costs</p>
           </div>
-          <div className="bg-slate-900 p-6 rounded-lg border border-slate-700">
-            <h2 className="text-2xl font-bold mb-2">Circuit Breaker</h2>
-            <p className="text-slate-300">Emergency pause mechanism for instant safety</p>
+          <div style={{ backgroundColor: '#1e293b', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #475569' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Circuit Breaker</h2>
+            <p style={{ color: '#cbd5e1' }}>Emergency pause mechanism for instant safety</p>
           </div>
-          <div className="bg-slate-900 p-6 rounded-lg border border-slate-700">
-            <h2 className="text-2xl font-bold mb-2">Whitelisting</h2>
-            <p className="text-slate-300">Only send funds to approved addresses</p>
+          <div style={{ backgroundColor: '#1e293b', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #475569' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>Whitelisting</h2>
+            <p style={{ color: '#cbd5e1' }}>Only send funds to approved addresses</p>
           </div>
         </div>
 
-        <div className="mt-12">
-          <a href="https://github.com/Torisbrain/agentescrow" className="text-blue-400 hover:text-blue-300 text-lg">
+        <div style={{ marginTop: '3rem' }}>
+          <a href="https://github.com/Torisbrain/agentescrow" style={{ color: '#60a5fa', textDecoration: 'none', fontSize: '1.125rem' }}>
             View on GitHub →
           </a>
         </div>
       </div>
     </main>
-  )
+  );
 }
